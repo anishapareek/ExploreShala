@@ -10,6 +10,6 @@ import Foundation
 struct Constants {
     static var apiKey = PrivateConstants.apiKey
     static var apiUrl = "https://api.yelp.com/v3/businesses/search"
-    static var restauratsKey = "restaurants"
+    static var restaurantsKey = "restaurants"
     static var sightsKey = "arts"
 }

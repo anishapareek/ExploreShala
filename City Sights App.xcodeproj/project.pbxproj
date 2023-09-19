@@ -10,6 +10,8 @@
 		F8325B982A993701002255D5 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B972A993701002255D5 /* ContentModel.swift */; };
 		F8325B9D2AB97EB6002255D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B9C2AB97EB6002255D5 /* Constants.swift */; };
 		F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B9E2AB98270002255D5 /* PrivateConstants.swift */; };
+		F8325BA12AB987FE002255D5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BA02AB987FE002255D5 /* Business.swift */; };
+		F8325BA32AB98BAA002255D5 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BA22AB98BAA002255D5 /* BusinessSearch.swift */; };
 		F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441C2A9934820003C645 /* CitySightsApp.swift */; };
 		F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441E2A9934820003C645 /* LaunchView.swift */; };
 		F8A644212A9934830003C645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A644202A9934830003C645 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		F8325B972A993701002255D5 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		F8325B9C2AB97EB6002255D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F8325B9E2AB98270002255D5 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
+		F8325BA02AB987FE002255D5 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		F8325BA22AB98BAA002255D5 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		F8A644192A9934820003C645 /* City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A6441C2A9934820003C645 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		F8A6441E2A9934820003C645 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -50,7 +54,6 @@
 		F8A644102A9934820003C645 = {
 			isa = PBXGroup;
 			children = (
-				F8325B992AB97E5A002255D5 /* Helpers */,
 				F8A6441B2A9934820003C645 /* City Sights App */,
 				F8A6441A2A9934820003C645 /* Products */,
 			);
@@ -71,6 +74,7 @@
 				F8A6442C2A9935420003C645 /* Views */,
 				F8A6442B2A99353B0003C645 /* ViewModels */,
 				F8A6442A2A9935350003C645 /* Models */,
+				F8325B992AB97E5A002255D5 /* Helpers */,
 				F8A644202A9934830003C645 /* Assets.xcassets */,
 				F8A644222A9934830003C645 /* Preview Content */,
 			);
@@ -88,6 +92,8 @@
 		F8A6442A2A9935350003C645 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8325BA02AB987FE002255D5 /* Business.swift */,
+				F8325BA22AB98BAA002255D5 /* BusinessSearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,7 +186,9 @@
 			files = (
 				F8325B9D2AB97EB6002255D5 /* Constants.swift in Sources */,
 				F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */,
+				F8325BA32AB98BAA002255D5 /* BusinessSearch.swift in Sources */,
 				F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */,
+				F8325BA12AB987FE002255D5 /* Business.swift in Sources */,
 				F8325B982A993701002255D5 /* ContentModel.swift in Sources */,
 				F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */,
 			);
