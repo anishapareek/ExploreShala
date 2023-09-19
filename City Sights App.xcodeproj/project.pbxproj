@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F8325B982A993701002255D5 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B972A993701002255D5 /* ContentModel.swift */; };
 		F8325B9D2AB97EB6002255D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B9C2AB97EB6002255D5 /* Constants.swift */; };
+		F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B9E2AB98270002255D5 /* PrivateConstants.swift */; };
 		F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441C2A9934820003C645 /* CitySightsApp.swift */; };
 		F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441E2A9934820003C645 /* LaunchView.swift */; };
 		F8A644212A9934830003C645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A644202A9934830003C645 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		F8325B972A993701002255D5 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		F8325B9C2AB97EB6002255D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8325B9E2AB98270002255D5 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
 		F8A644192A9934820003C645 /* City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A6441C2A9934820003C645 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		F8A6441E2A9934820003C645 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				F8325B9C2AB97EB6002255D5 /* Constants.swift */,
+				F8325B9E2AB98270002255D5 /* PrivateConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */,
 				F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */,
 				F8325B982A993701002255D5 /* ContentModel.swift in Sources */,
+				F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
