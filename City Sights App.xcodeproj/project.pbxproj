@@ -83,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F8325BA72AB99BB1002255D5 /* HomeView.swift */,
+				F8325BB22ABA1F29002255D5 /* Detail */,
 				F8325BB52ABAB405002255D5 /* Map */,
 				F8325BA92AB9A35F002255D5 /* List */,
 			);
@@ -92,7 +93,6 @@
 		F8325BA92AB9A35F002255D5 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				F8325BB22ABA1F29002255D5 /* Detail */,
 				F8325BAA2AB9A36A002255D5 /* BusinessList.swift */,
 				F8325BAC2AB9A5D6002255D5 /* BusinessSectionHeader.swift */,
 				F8325BAE2AB9A6BF002255D5 /* BusinessSection.swift */,
