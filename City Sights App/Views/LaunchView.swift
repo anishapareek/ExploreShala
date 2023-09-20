@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct LaunchView: View {
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        // Detect the authorization status of geolocating the user
+        if model.authorizationState == .notDetermined {
+            // If undetermined, show onboarding
         }
-        .padding()
+        else if model.authorizationState == .authorizedAlways ||
+                    model.authorizationState == .authorizedWhenInUse {
+            // If approved, show home view
+            HomeView()
+        }
+        else {
+            // If denied, show denied view
+        }
+        
     }
 }
 

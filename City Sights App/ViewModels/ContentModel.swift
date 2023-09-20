@@ -8,11 +8,12 @@
 import Foundation
 import CoreLocation
 
-@MainActor
 class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
     var locationManager = CLLocationManager()
     
     override init() {
@@ -32,6 +33,9 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     // MARK: Location Manager Delegate Methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+        authorizationState = manager.authorizationStatus
+        
         if manager.authorizationStatus == .authorizedAlways ||
             manager.authorizationStatus == .authorizedWhenInUse {
             // We have permission, start geolocating the user
@@ -87,13 +91,31 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
                 // Parse json
                 let decoder = JSONDecoder()
                 let result = try decoder.decode(BusinessSearch.self, from: data)
-                switch category {
-                case Constants.restaurantsKey:
-                    self.restaurants = result.businesses
-                case Constants.sightsKey:
-                    self.sights = result.businesses
-                default:
-                    break
+                
+                // Sort businesses
+                var businesses = result.businesses
+                businesses.sort { b1, b2 in
+                    return b1.distance ?? 0 < b2.distance ?? 0
+                }
+                let sortedBusinesses = businesses
+                
+                // Call the get image function of the businesses
+                for b in sortedBusinesses {
+                    await b.getImageData()
+                }
+                
+                DispatchQueue.main.async {
+                    
+                    // Assign results to the appropriate property
+                    
+                    switch category {
+                    case Constants.restaurantsKey:
+                        self.restaurants = sortedBusinesses
+                    case Constants.sightsKey:
+                        self.sights = sortedBusinesses
+                    default:
+                        break
+                    }
                 }
             } catch {
                 // could not fetch data

@@ -12,6 +12,12 @@
 		F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325B9E2AB98270002255D5 /* PrivateConstants.swift */; };
 		F8325BA12AB987FE002255D5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BA02AB987FE002255D5 /* Business.swift */; };
 		F8325BA32AB98BAA002255D5 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BA22AB98BAA002255D5 /* BusinessSearch.swift */; };
+		F8325BA82AB99BB1002255D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BA72AB99BB1002255D5 /* HomeView.swift */; };
+		F8325BAB2AB9A36A002255D5 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BAA2AB9A36A002255D5 /* BusinessList.swift */; };
+		F8325BAD2AB9A5D6002255D5 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BAC2AB9A5D6002255D5 /* BusinessSectionHeader.swift */; };
+		F8325BAF2AB9A6BF002255D5 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BAE2AB9A6BF002255D5 /* BusinessSection.swift */; };
+		F8325BB12AB9B0C6002255D5 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BB02AB9B0C6002255D5 /* BusinessRow.swift */; };
+		F8325BB42ABA1F47002255D5 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8325BB32ABA1F47002255D5 /* BusinessDetail.swift */; };
 		F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441C2A9934820003C645 /* CitySightsApp.swift */; };
 		F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A6441E2A9934820003C645 /* LaunchView.swift */; };
 		F8A644212A9934830003C645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A644202A9934830003C645 /* Assets.xcassets */; };
@@ -24,6 +30,12 @@
 		F8325B9E2AB98270002255D5 /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
 		F8325BA02AB987FE002255D5 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		F8325BA22AB98BAA002255D5 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		F8325BA72AB99BB1002255D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F8325BAA2AB9A36A002255D5 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		F8325BAC2AB9A5D6002255D5 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
+		F8325BAE2AB9A6BF002255D5 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		F8325BB02AB9B0C6002255D5 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
+		F8325BB32ABA1F47002255D5 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		F8A644192A9934820003C645 /* City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A6441C2A9934820003C645 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		F8A6441E2A9934820003C645 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -49,6 +61,49 @@
 				F8325B9E2AB98270002255D5 /* PrivateConstants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8325BA42AB99B7F002255D5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F8325BA52AB99B88002255D5 /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
+			sourceTree = "<group>";
+		};
+		F8325BA62AB99B93002255D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8325BA72AB99BB1002255D5 /* HomeView.swift */,
+				F8325BA92AB9A35F002255D5 /* List */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F8325BA92AB9A35F002255D5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F8325BB22ABA1F29002255D5 /* Detail */,
+				F8325BAA2AB9A36A002255D5 /* BusinessList.swift */,
+				F8325BAC2AB9A5D6002255D5 /* BusinessSectionHeader.swift */,
+				F8325BAE2AB9A6BF002255D5 /* BusinessSection.swift */,
+				F8325BB02AB9B0C6002255D5 /* BusinessRow.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F8325BB22ABA1F29002255D5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F8325BB32ABA1F47002255D5 /* BusinessDetail.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		F8A644102A9934820003C645 = {
@@ -110,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				F8A6441E2A9934820003C645 /* LaunchView.swift */,
+				F8325BA62AB99B93002255D5 /* Home */,
+				F8325BA52AB99B88002255D5 /* Denied */,
+				F8325BA42AB99B7F002255D5 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,11 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8325BB42ABA1F47002255D5 /* BusinessDetail.swift in Sources */,
+				F8325BAF2AB9A6BF002255D5 /* BusinessSection.swift in Sources */,
 				F8325B9D2AB97EB6002255D5 /* Constants.swift in Sources */,
 				F8A6441F2A9934820003C645 /* LaunchView.swift in Sources */,
+				F8325BAD2AB9A5D6002255D5 /* BusinessSectionHeader.swift in Sources */,
 				F8325BA32AB98BAA002255D5 /* BusinessSearch.swift in Sources */,
 				F8A6441D2A9934820003C645 /* CitySightsApp.swift in Sources */,
 				F8325BA12AB987FE002255D5 /* Business.swift in Sources */,
+				F8325BAB2AB9A36A002255D5 /* BusinessList.swift in Sources */,
+				F8325BB12AB9B0C6002255D5 /* BusinessRow.swift in Sources */,
+				F8325BA82AB99BB1002255D5 /* HomeView.swift in Sources */,
 				F8325B982A993701002255D5 /* ContentModel.swift in Sources */,
 				F8325B9F2AB98270002255D5 /* PrivateConstants.swift in Sources */,
 			);
