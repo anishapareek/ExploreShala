@@ -1,4 +1,5 @@
 # ExploreShala
+The app is developed in SwiftUI and MVVM architecture pattern is followed for code organization. 
 
 This app is going to feature a list of top rated restaurants and sites to visit in the city that the user lives in. The data comes from the Yelp API and the app also leverages MapKit to show maps and directions.
 The app also uses the CoreLocation framework to request permision to geolocate the user.
